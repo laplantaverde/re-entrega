@@ -1,4 +1,4 @@
-window.addEventListener("scroll", function() {
+ window.addEventListener("scroll", function() {
     var scrollTop = window.pageYOffset;
     var header = document.querySelector(".header");
     var headerHeight = header.offsetHeight;
@@ -8,4 +8,6 @@ window.addEventListener("scroll", function() {
     } else {
       header.classList.remove("smaller");
     }
-  });
+  });  
+
+//estaba intentando que el header se haga mas pequeño al hacer scroll pero no me funciona
