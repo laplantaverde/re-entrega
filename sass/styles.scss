@@ -113,7 +113,8 @@ header a button:hover {
     margin-top: 100px;
     height: 500px;
     width: auto;
-    border: 2px solid $colorMorado;
+    border: 4px solid $colorSalmon;
+    border-radius: 2%;
    
     
     
@@ -122,6 +123,40 @@ header a button:hover {
 .anuncio {
     display: flex;
     align-items: center;
-    justify-content: center;margin-top: 100px;
+    justify-content: center;
+    margin-top: 100px;
    
 }
+
+.container {
+    margin-top: 50px;
+    display: grid;
+    //justify-content: center;
+    //align-items: end;
+    //No puedo lograr que las imagenes queden centradas cuando esta en desktop
+
+}
+
+.container img:hover {
+    border: 2px solid $colorCorazon;
+    border-radius: 2%;
+}
+
+form{
+    border: 3px solid $colorSalmon;
+    border-radius: 2%;
+    padding: 15px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.cuadrosform {
+   margin-top: 5px;
+   margin-bottom: 5px;
+   justify-content: center;
+}
+
+footer {
+   padding-top: 10px;
+   background: rgb(255,209,199);
+   background: linear-gradient(0deg, rgba(255,209,199,0.59156162464986) 25%, rgba(242,159,201,0.529936974789916) 63%);}

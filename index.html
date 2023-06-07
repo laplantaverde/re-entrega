@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"  content="Las mejores flores y regalos para cualquier ocasión a precios increibles.Envios a todo el país">
     <meta name="keywords" content="Floreria,Ofertas,Flores,Baratas,Rapido,Envio, Regalos, Ocasiones, Especial" >
+    <!--favicon-->
     <link rel="icon" href="FloriellyPictures/iconoFLor.png" type="image" alt="logo Florielly" >
     <!--Link a la pagina de estilos-->
     <link rel="stylesheet" type="text/css" href="sass/styles.css">
@@ -36,20 +37,74 @@
       <a class="buttonCont"  href="paginas/contacto.html" ><button>Contacto</button></a>
     </header> 
     
+
     <div class="anuncio">
-        <div class="row">
-            <div class="col-sm-6 col-md-4">
-                 <img src="FloriellyPictures/anuncioAlegraSuDia.png" alt="Anuncio alegra su día" class="img-fluid d-block"/>
-            </div>  
-        </div>          
+        <img src="FloriellyPictures/anuncioAlegraSuDia.png" alt="Anuncio alegra su día" class="img-fluid d-block">
     </div>
-    <div class="anuncio">
-        <img src="FloriellyPictures/anuncioAlegraSuDia.png" alt="Anuncio alegra su día" />
+    
+    <div class="container">
+        <div class="row">
+          <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center align-items-center">
+            <img src="FloriellyPictures/1.png" alt="Descripción de la imagen 1" class="img-fluid">
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center align-items-center">
+            <img src="FloriellyPictures/2.png" alt="Descripción de la imagen 2" class="img-fluid">
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center align-items-center">
+            <img src="FloriellyPictures/3.png" alt="Descripción de la imagen 3" class="img-fluid">
+          </div>
         </div>
-    <footer>
-        <div class="anuncio">
-            <img src="FloriellyPictures/anuncioAlegraSuDia.png" alt="Anuncio alegra su día" />
+      </div>
+
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <form class="formulario" enctype="text/plain"  method="post" >
+                        <h3>Nos ayudaria saber tu opinion!</h3>
+                        <h4 id="envienoscomentarios">Envienos sus comentarios</h4>
+                        <input type="text" name="nombre" id="nombres" placeholder="nombres" label="nombres" class="cuadrosform" > <br>
+                        <input type="text" name="apellido" id="apellidos" placeholder="apellidos" label="apellidos"  class="cuadrosform" ><br>
+                        <input type="email" name="correo" id="correos" placeholder="correo electronico" label="correo" class="cuadrosform" ><br>
+                        <input type="text" name="comentarios" id="comentarios" placeholder="Ingrese su comentario aquí" label="comentarios" class="cuadrosform" >
+                        <p id="form-satisfaccion">Como fue su experiencia en Florielly</p>
+                        <select class="form-select"  name="satisfacción" >
+                            <option value="sin respuesta" >...</option>
+                            <option value="Muy satisfecho" >Muy buena</option>
+                            <option value="satisfecho" >buena</option>
+                            <option value="poco satisfecho" >normal</option>
+                            <option value="nada satisfecho" >mala</option>
+                        </select><br>
+                        <input type="submit" value="Enviar" class="Boton" >
+                </form>
             </div>
+          </div>
+        </div>
+      
+       
+
+    <footer class="footer">    
+        <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                <h3>Contacto</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Lima,Perú, Distrito 123</p>
+                <p><i class="fas fa-phone"></i>+51 942161320</p>
+                <p><i class="fas fa-envelope"></i>isaata123rios@gmail.com</p>
+              </div>
+              <div class="col-md-4">
+              </div>
+              <div class="col-md-4">
+                <h3>Síguenos en redes sociales</h3>
+                <ul class="list-inline">
+                  <li><a href="facebook.com">Facebook</a></li>
+                  <li><a href="instagram.com">Instagram</a></li>
+                  <li><a href="twitter.com">Twitter</a></li>
+                </ul>
+              </div>
+            </div>
+            <hr>
+            <p class="text-center">© 2023 Florielly. Todos los derechos reservados.</p>
+          </div>
     </footer>
 </body>
 </html>
