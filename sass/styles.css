@@ -107,8 +107,8 @@ header a button:hover {
   margin-top: 50px;
 }
 
-img .container {
-  margin-top: 40px;
+.image-container {
+  margin-top: 10%;
 }
 
 .container img:hover {
@@ -137,5 +137,13 @@ footer {
 }
 
 .containerProducts {
+  margin-top: 500px;
   margin-top: 70px;
+}
+
+.container img {
+  width: 200px;
+  height: 200px;
+  margin-top: 20px;
+  margin-bottom: 70px;
 }/*# sourceMappingURL=styles.css.map */
