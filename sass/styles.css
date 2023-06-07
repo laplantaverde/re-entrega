@@ -105,7 +105,10 @@ header a button:hover {
 
 .container {
   margin-top: 50px;
-  display: grid;
+}
+
+img .container {
+  margin-top: 40px;
 }
 
 .container img:hover {
@@ -131,4 +134,8 @@ footer {
   padding-top: 10px;
   background: rgb(255, 209, 199);
   background: linear-gradient(0deg, rgba(255, 209, 199, 0.5915616246) 25%, rgba(242, 159, 201, 0.5299369748) 63%);
+}
+
+.containerProducts {
+  margin-top: 70px;
 }/*# sourceMappingURL=styles.css.map */

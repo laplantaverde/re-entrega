@@ -130,11 +130,15 @@ header a button:hover {
 
 .container {
     margin-top: 50px;
-    display: grid;
+    //display: grid;
     //justify-content: center;
     //align-items: end;
     //No puedo lograr que las imagenes queden centradas cuando esta en desktop
 
+}
+
+img .container {
+    margin-top: 40px;
 }
 
 .container img:hover {
@@ -160,3 +164,7 @@ footer {
    padding-top: 10px;
    background: rgb(255,209,199);
    background: linear-gradient(0deg, rgba(255,209,199,0.59156162464986) 25%, rgba(242,159,201,0.529936974789916) 63%);}
+
+.containerProducts {
+    margin-top: 70px;
+}
