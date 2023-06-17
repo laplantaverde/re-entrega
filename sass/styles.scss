@@ -1,3 +1,5 @@
+//fuentes
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,600;1,300;1,600&display=swap');
 //variables
 $colorRosaClaro:#ffd6e0;
 $colorSalmon: #ff7496;
@@ -6,8 +8,15 @@ $colorVerde: #5f8765;
 $colorAmarillo: #fdc438;
 $colorRojo: #eb0161;
 $colorMorado: #b11f89;
-//fuentes
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,600;1,300;1,600&display=swap');
+//mixin
+@mixin elMedio {
+    display: flex;
+    align-items: center;
+    justify-content: center;}
+@mixin margenes {
+    margin-top: 70px;
+    margin-bottom: 40px;}
+//.....................
 
 
 * {
@@ -30,82 +39,69 @@ header{
     width: 100%;
     z-index: 999;
     transition: top 0.3s ease;
-}
 
-header.smaller {
-    height: 50px; 
-    font-size: 14px;}
- 
-  
-content {
-    margin-top: 100px; }
-
-header img {
+    .smaller {
+        height: 50px; 
+        font-size: 14px;}
+    
+    img {
     height: 115px;
     width: auto;
     cursor: pointer;
-    transition: all 0.3s;
+    transition: all 0.3s;}
+
+    img:hover {
+        transform: scale(1.2);
+    }   
     
-   
-  
+    ul{
+        li {
+            display: inline-block;
+            padding: 0 20px;}
+        
+        li:hover{ 
+            transform: scale(1.1);}
+
+        a{
+            font-size: 700;
+            text-decoration: none;
+            color: #000000; }
+        
+
+
+        
+            button {
+                font-weight: 700;
+                color: black;
+                padding: 9px 25px;
+                background: rgb(252, 252, 252);
+                border: none;
+                border-radius: 50px;
+                cursor: pointer;
+                transition: all 0.3s ease 0s;}
+
+            button:hover {
+                color: $colorMorado;
+                transform: scale(1.1);}    
+        
+        } 
+            
+        a:visited {
+            font-size: 700;
+            text-decoration: none;
+            color: #000000;}
+            
+        a:hover{
+            color:$colorMorado;
+            font-weight: bold;       
+    }
+
 }
 
-header img:hover {
-    transform: scale(1.2);
-}
 
-header .navLinks {
-    list-style: none;
 
-}
 
-header .navLinks li {
-    display: inline-block;
-    padding: 0 20px;
 
-header .navLinks li:hover{ 
-    transform: scale(1.1);
-    
-  
-}    
-
-}
-
-header .navLinks a{
-    font-size: 700;
-    text-decoration: none;
-    color: #000000;
-    
-
-}
-
-header .navLinks a:visited {
-    font-size: 700;
-    text-decoration: none;
-    color: #000000;
-
-}
-
-header .navLinks a:hover{
-    color:$colorMorado;
-    font-weight: bold;
-}
-
-header a button {
-    font-weight: 700;
-    color: black;
-    padding: 9px 25px;
-    background: rgb(252, 252, 252);
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-}
-
-header a button:hover {
-    color: $colorMorado;
-    transform: scale(1.1);
-}
 
 .anuncio img {
     position: relative;
@@ -114,65 +110,61 @@ header a button:hover {
     height: 500px;
     width: auto;
     border: 4px solid $colorSalmon;
-    border-radius: 2%;
-   
-    
-    
-}
+    border-radius: 2%;}
 
 .anuncio {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 100px;
+    @include elMedio();
+    margin-top: 100px;}
    
+
+.containerForm{
+    margin-bottom: 60px;
+
+    form{
+        border: 3px solid $colorSalmon;
+        border-radius: 2%;
+        padding: 15px;
+        margin-bottom: 30px;
+        width: 100%;
+
+          input {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            justify-content: center;}
+    
+    }
+
+
 }
 
-.container {
-    margin-top: 50px;
-    //display: grid;
-    //justify-content: center;
-    //align-items: end;
-    //No puedo lograr que las imagenes queden centradas cuando esta en desktop
 
-}
-
-.image-container {
-    margin-top: 10%;
-}
-
-.container img:hover {
-    border: 2px solid $colorCorazon;
-    border-radius: 2%;
-}
-
-form{
-    border: 3px solid $colorSalmon;
-    border-radius: 2%;
-    padding: 15px;
-    margin-bottom: 30px;
-    width: 100%;
-}
-
-.cuadrosform {
-   margin-top: 5px;
-   margin-bottom: 5px;
-   justify-content: center;
-}
 
 footer {
    padding-top: 10px;
    background: rgb(255,209,199);
    background: linear-gradient(0deg, rgba(255,209,199,0.59156162464986) 25%, rgba(242,159,201,0.529936974789916) 63%);}
 
-.containerProducts {
-    margin-top: 500px;
-    margin-top: 70px;
-}
 
-.container img {
-    width: 200px;
-    height: 200px;
-    margin-top: 20px;
-    margin-bottom: 70px;
+
+.containerProducts {
+
+
+    img {
+         width: 200px;
+         height: 200px;
+         margin-top: 20px;
+         margin-bottom: 70px;
+         @include elMedio();
+         margin-left:auto;
+        }
+
+    p {
+        @include margenes();
+        @include elMedio();
+        font-size: 25px; }
+
+    img:hover {
+        border: 2px solid $colorCorazon;
+        border-radius: 5%;}
+
 }

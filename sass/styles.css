@@ -20,57 +20,32 @@ header {
   z-index: 999;
   transition: top 0.3s ease;
 }
-
-header.smaller {
+header .smaller {
   height: 50px;
   font-size: 14px;
 }
-
-content {
-  margin-top: 100px;
-}
-
 header img {
   height: 115px;
   width: auto;
   cursor: pointer;
   transition: all 0.3s;
 }
-
 header img:hover {
   transform: scale(1.2);
 }
-
-header .navLinks {
-  list-style: none;
-}
-
-header .navLinks li {
+header ul li {
   display: inline-block;
   padding: 0 20px;
 }
-header .navLinks li header .navLinks li:hover {
+header ul li:hover {
   transform: scale(1.1);
 }
-
-header .navLinks a {
+header ul a {
   font-size: 700;
   text-decoration: none;
   color: #000000;
 }
-
-header .navLinks a:visited {
-  font-size: 700;
-  text-decoration: none;
-  color: #000000;
-}
-
-header .navLinks a:hover {
-  color: #b11f89;
-  font-weight: bold;
-}
-
-header a button {
+header ul button {
   font-weight: 700;
   color: black;
   padding: 9px 25px;
@@ -80,10 +55,18 @@ header a button {
   cursor: pointer;
   transition: all 0.3s ease 0s;
 }
-
-header a button:hover {
+header ul button:hover {
   color: #b11f89;
   transform: scale(1.1);
+}
+header a:visited {
+  font-size: 700;
+  text-decoration: none;
+  color: #000000;
+}
+header a:hover {
+  color: #b11f89;
+  font-weight: bold;
 }
 
 .anuncio img {
@@ -103,28 +86,17 @@ header a button:hover {
   margin-top: 100px;
 }
 
-.container {
-  margin-top: 50px;
+.containerForm {
+  margin-bottom: 60px;
 }
-
-.image-container {
-  margin-top: 10%;
-}
-
-.container img:hover {
-  border: 2px solid #fed1da;
-  border-radius: 2%;
-}
-
-form {
+.containerForm form {
   border: 3px solid #ff7496;
   border-radius: 2%;
   padding: 15px;
   margin-bottom: 30px;
   width: 100%;
 }
-
-.cuadrosform {
+.containerForm form input {
   margin-top: 5px;
   margin-bottom: 5px;
   justify-content: center;
@@ -136,14 +108,25 @@ footer {
   background: linear-gradient(0deg, rgba(255, 209, 199, 0.5915616246) 25%, rgba(242, 159, 201, 0.5299369748) 63%);
 }
 
-.containerProducts {
-  margin-top: 500px;
-  margin-top: 70px;
-}
-
-.container img {
+.containerProducts img {
   width: 200px;
   height: 200px;
   margin-top: 20px;
   margin-bottom: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+}
+.containerProducts p {
+  margin-top: 70px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+}
+.containerProducts img:hover {
+  border: 2px solid #fed1da;
+  border-radius: 5%;
 }/*# sourceMappingURL=styles.css.map */
